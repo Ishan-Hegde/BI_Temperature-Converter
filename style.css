@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 :root {
@@ -23,8 +24,38 @@ body {
 
 }
 
-label {
-    font-size: 40px;
+.temperature-converter {
+    background: rgba(24, 24, 24, 0.847);
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 25px 45px;
+    box-shadow: -5px -5px 250px 0px rgba(255, 255, 255, 0.02) inset;
+    backdrop-filter: blur(21px);
+}
+
+.mobile {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#clock {
+    max-width: 600px;
+    font-size: 0.45rem;
+}
+
+h2 {
+    align-self: center;
+}
+
+header {
+    align-self: center;
+    font-size: large;
     letter-spacing: 2px;
     font-weight: bold;
 }
@@ -33,6 +64,10 @@ input {
     margin: 50px 0 10px;
     padding: 7px;
     font-size: 20px;
+}
+
+input #input-box{
+    justify-self: center;
 }
 
 .result {
@@ -66,7 +101,7 @@ button:hover {
 
 
 /*  Media queries */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
     label {
         font-size: 35px;
     }
